@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tBalance" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ff45f0ae-eab9-4ad7-9cd2-74890ee10776">
+	<property name="ireport.zoom" value="1.6105100000000032"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select * from current_table]]>
+	</queryString>
+	<field name="account_name" class="java.lang.String"/>
+	<field name="debits_sum_balance" class="java.math.BigDecimal"/>
+	<field name="debits_sum" class="java.math.BigDecimal"/>
+	<field name="credits_sum" class="java.math.BigDecimal"/>
+	<field name="credits_sum_balance" class="java.math.BigDecimal"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="211" y="0" width="123" height="33" uuid="f6895a1f-f152-46e9-8147-cde5eb392264"/>
+				<textElement>
+					<font fontName="HY견고딕" size="24" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[BALANCE SHEET]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="211" y="1" width="123" height="20" uuid="54854269-6317-48ac-9af4-7e5a2766d5cb"/>
+				<textElement textAlignment="Center">
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[계정 과목]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="1" width="100" height="20" uuid="a6257721-2248-4627-b246-ee40246c064b"/>
+				<textElement textAlignment="Center">
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[차변 잔액]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="1" width="111" height="20" uuid="8e7f9c1e-e0bf-48ae-8f65-5a708a900e86"/>
+				<textElement textAlignment="Center">
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[차변 합계]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="334" y="1" width="110" height="20" uuid="953aae34-4398-4ad7-a115-e4c667f4005b"/>
+				<textElement textAlignment="Center">
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[대변 합계]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="20" uuid="aa28dd36-953f-498f-beee-87af3441f01d"/>
+				<textElement textAlignment="Center">
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[대변 잔액]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement x="211" y="0" width="123" height="20" uuid="611461be-86be-4e56-9299-fab4def737f5"/>
+				<textElement>
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{account_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="7ca68687-7f59-4029-912c-7ac0eea4029f"/>
+				<textElement>
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{debits_sum_balance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="111" height="20" uuid="5d00cd62-5387-45db-8188-1f178813c485"/>
+				<textElement>
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{debits_sum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="334" y="0" width="110" height="20" uuid="1fea1d67-5e77-468f-aab3-d316c614499a"/>
+				<textElement>
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{credits_sum}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="20" uuid="3c0fbfa8-0df4-47bc-bce9-d7a7704a45bd"/>
+				<textElement>
+					<font fontName="HY견고딕" pdfFontName="HYGoThic-Medium" pdfEncoding="UniKS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{credits_sum_balance}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

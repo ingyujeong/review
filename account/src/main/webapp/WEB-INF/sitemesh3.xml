@@ -1,0 +1,6 @@
+<sitemesh>
+    <mapping path="/loginForm" exclue="true"/>
+    <mapping path="/" exclue="true"/>	<!-- 필요시 매핑추가로 사용할것 -->
+
+    <mapping path="/*" decorator="/WEB-INF/jsp/decorators/decorator.jsp"/>
+</sitemesh>

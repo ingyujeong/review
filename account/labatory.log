@@ -1,0 +1,17 @@
+2022-06-11 10:19:10.719 INFO  634  --- [ restartedMain ] k.c.s.account.AccountApplication - Starting AccountApplication using Java 11.0.11 on DESKTOP-B9GSTP1 with PID 13188 (C:\Users\user\work\account\bin\main started by user in C:\Users\user\work\account)
+2022-06-11 10:19:10.723 INFO  638  --- [ restartedMain ] k.c.s.account.AccountApplication - No active profile set, falling back to 1 default profile: "default"
+2022-06-11 10:19:10.764 INFO  679  --- [ restartedMain ] o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\user\.gradle\caches\modules-2\files-2.1\javax.mail\mail\1.4.1\8b7bc69010655425dabf091b51d1e90b4de36715\mail-1.4.1.jar referenced one or more files that do not exist: file:/C:/Users/user/.gradle/caches/modules-2/files-2.1/javax.mail/mail/1.4.1/8b7bc69010655425dabf091b51d1e90b4de36715/activation.jar
+2022-06-11 10:19:10.765 INFO  680  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-11 10:19:10.765 INFO  680  --- [ restartedMain ] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-11 10:19:11.971 INFO  1886 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8084 (http)
+2022-06-11 10:19:11.982 INFO  1897 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8084"]
+2022-06-11 10:19:11.982 INFO  1897 --- [ restartedMain ] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-06-11 10:19:11.982 INFO  1897 --- [ restartedMain ] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-11 10:19:12.205 INFO  2120 --- [ restartedMain ] o.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-06-11 10:19:12.215 INFO  2130 --- [ restartedMain ] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-06-11 10:19:12.215 INFO  2130 --- [ restartedMain ] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1450 ms
+2022-06-11 10:19:12.566 WARN  2481 --- [ restartedMain ] o.m.spring.SqlSessionFactoryBean - Cannot load the 'file [C:\Users\user\work\account\bin\main\kr\co\seoulit\account\sys\common\transaction\DataSourceTransactionManager.class]'. Cause by java.lang.ExceptionInInitializerError
+2022-06-11 10:19:13.217 INFO  3132 --- [ restartedMain ] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2022-06-11 10:19:13.233 INFO  3148 --- [ restartedMain ] o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8084"]
+2022-06-11 10:19:13.262 INFO  3177 --- [ restartedMain ] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8084 (http) with context path ''
+2022-06-11 10:19:13.273 INFO  3188 --- [ restartedMain ] k.c.s.account.AccountApplication - Started AccountApplication in 2.901 seconds (JVM running for 3.88)
